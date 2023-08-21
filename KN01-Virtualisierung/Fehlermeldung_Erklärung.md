@@ -1,3 +1,24 @@
-## Why the error message?
+# KN01-Virtualisierung
 
-The total memory of the running virtual machines added to the overhead for the VMware Server processes cannot be greater than the amount of physical memory on the host excluding additional memory reserved for the host to operate properly while virtual machines are running.
+### Host CPU Info:
+![alt text for screen readers](5-Gast-system_CPU-Info.png)
+
+### Konsolen-Ausgabe der CPUs bei weniger CPU als Gast-System:
+![alt text for screen readers](1-weniger_CPU.png)
+
+### Konsolen-Ausgabe der CPUs bei mehr CPU als Gast-System:
+![alt text for screen readers](2-mehr_CPU.png)
+
+### Host RAM Info:
+![alt text for screen readers](6-Gast-system_RAM-Info.png)
+
+### Konsolen-Ausgabe des RAM bei weniger RAM als Gast-System:
+![alt text for screen readers](3-weniger_RAM.png)
+
+### Fehlermeldung:
+![alt text for screen readers](4-error_message.png)
+
+
+### Warum die Fehlermeldung?
+
+Der Gesamtspeicher der ausgeführten virtuellen Maschinen plus der Overhead für die VMware Server-Prozesse darf nicht größer sein als der physische Arbeitsspeicher des Hosts.
