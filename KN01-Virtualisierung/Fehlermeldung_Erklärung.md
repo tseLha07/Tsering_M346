@@ -1,7 +1,7 @@
 # KN01-Virtualisierung
 
 ### Host CPU Info:
-Ctrl + shift + esc > open Perfomance Tab
+Ctrl + shift + esc > open Perfomance Tab <br>
 ![alt text for screen readers](5-Gast-system_CPU-Info.png)
 Host CPU cores: 4
 CPU: Central Processing Unit
