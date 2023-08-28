@@ -2,9 +2,9 @@
 
 ### Host CPU Info:
 Ctrl + shift + esc > open Perfomance Tab <br>
-![alt text for screen readers](5-Gast-system_CPU-Info.png)
-Host CPU cores: 4
-CPU: Central Processing Unit
+![alt text for screen readers](5-Gast-system_CPU-Info.png) <br>
+Host CPU cores: 4 <br>
+CPU: Central Processing Unit <br>
 executes instructions of a computer program, such as arithmetic, logic, controlling, and input/output operations. 
 
 ### Konsolen-Ausgabe der CPUs bei weniger CPU als Gast-System:
@@ -14,8 +14,8 @@ executes instructions of a computer program, such as arithmetic, logic, controll
 ![alt text for screen readers](2-mehr_CPU.png)
 
 ### Host RAM Info:
-Settings > System > About
-![alt text for screen readers](6-Gast-system_RAM-Info.png)
+Settings > System > About <br>
+![alt text for screen readers](6-Gast-system_RAM-Info.png) <br>
 Host RAM: 16.0 GB
 
 ### Konsolen-Ausgabe des RAM bei weniger RAM als Gast-System:
