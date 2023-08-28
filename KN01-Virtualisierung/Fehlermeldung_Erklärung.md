@@ -1,11 +1,11 @@
 # KN01-Virtualisierung
 
 ### Host CPU Info:
+Ctrl + shift + esc > open Perfomance Tab
 ![alt text for screen readers](5-Gast-system_CPU-Info.png)
-Ctrl + shift + esc, then open Perfomance Tab
+Host CPU cores: 4
 CPU: Central Processing Unit
 executes instructions of a computer program, such as arithmetic, logic, controlling, and input/output operations. 
-Host CPU cores: 4
 
 ### Konsolen-Ausgabe der CPUs bei weniger CPU als Gast-System:
 ![alt text for screen readers](1-weniger_CPU.png)
@@ -14,7 +14,9 @@ Host CPU cores: 4
 ![alt text for screen readers](2-mehr_CPU.png)
 
 ### Host RAM Info:
+Settings > System > About
 ![alt text for screen readers](6-Gast-system_RAM-Info.png)
+Host RAM: 16.0 GB
 
 ### Konsolen-Ausgabe des RAM bei weniger RAM als Gast-System:
 ![alt text for screen readers](3-weniger_RAM.png)
