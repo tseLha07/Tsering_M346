@@ -2,6 +2,10 @@
 
 ### Host CPU Info:
 ![alt text for screen readers](5-Gast-system_CPU-Info.png)
+Ctrl + shift + esc, then open Perfomance Tab
+CPU: Central Processing Unit
+executes instructions of a computer program, such as arithmetic, logic, controlling, and input/output operations. 
+Host CPU cores: 4
 
 ### Konsolen-Ausgabe der CPUs bei weniger CPU als Gast-System:
 ![alt text for screen readers](1-weniger_CPU.png)
