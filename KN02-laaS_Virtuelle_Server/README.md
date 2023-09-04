@@ -24,7 +24,7 @@
 ![HTML-Seite, inkl. URL](Img_Lab_4.2-S3/HTML_Seite.png) <br>
 
 3. Liste der Dateien im Bucket:
-![HTML-Seite, inkl. URL](Img_Lab_4.1-EC2/HTML_seite.png) <br>
+![HTML-Seite, inkl. URL](Img_Lab_4.2-S3/ListeDerDateien.png) <br>
 
 4. Eigenschaften von "Static website hosting":
 ![Eigenschaften von "Static website hosting"](Img_Lab_4.2-S3/StaticWebsiteHostingEigenschaften.png)
