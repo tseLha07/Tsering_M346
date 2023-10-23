@@ -4,21 +4,22 @@
 1. Die dokumentierte YAML-Datei
 
 ~~~ruby
-#cloud-config
-users: #
-  - name: ubuntu #
-    sudo: ALL=(ALL) NOPASSWD:ALL #
-    groups: users, admin #
-    home: /home/ubuntu #
-    shell: /bin/bash #
-    ssh_authorized_keys: #
-      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key       
-ssh_pwauth: false #
-disable_root: false # 
-package_update: true #
-packages: #
-  - curl #
-  - wget #
+#cloud-config (This is a comment indicating the start of a cloud-config script.)
+users: # This line starts the user configuration for cloud-config.
+  - name: ubuntu # Defines a user named "ubuntu".
+    sudo: ALL=(ALL) NOPASSWD:ALL # Grants the "ubuntu" user sudo privileges without requiring a password.
+    groups: users, admin # Assigns the "ubuntu" user to the "users" and "admin" groups.
+    home: /home/ubuntu # Sets the home directory for the "ubuntu" user to "/home/ubuntu."
+    shell: /bin/bash # Specifies the default shell for the "ubuntu" user as "/bin/bash."
+    ssh_authorized_keys: # Defines the SSH authorized keys section for the "ubuntu" user.
+      - ssh-rsa # Adds an SSH public key
+      AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3DmZNzKFO5nEu6uozEHh4jLZzPNHSrfFTuQ2GnRDSt+XbOtTLdcj26+iPNiFoFha42aCIzYjt6V8Z+SQ9pzF4jPPzxwXfDdkEWylgoNnZ+4MG1lNFqa8aO7F62tX0Yj5khjC0Bs7Mb2cHLx1XZaxJV6qSaulDuBbLYe8QUZXkMc7wmob3PM0kflfolR3LE7LResIHWa4j4FL6r5cQmFlDU2BDPpKMFMGUfRSFiUtaWBNXFOWHQBC2+uKmuMPYP4vJC9sBgqMvPN/X2KyemqdMvdKXnCfrzadHuSSJYEzD64Cve5Zl9yVvY4AqyBD aws-key       
+ssh_pwauth: false # Disables SSH password authentication for all users.
+disable_root: false # Allows root login via SSH.
+package_update: true # Updates the package repository and installs the latest versions of packages.
+packages: # Starts the package installation section.
+  - curl # Specifies the installation of the "curl" package
+  - wget # Specifies the installation of the "wget" package
 ~~~
 
 
