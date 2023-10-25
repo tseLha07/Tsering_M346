@@ -1,0 +1,49 @@
+#cloud-config
+
+# Users Configuration
+users:
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    groups: users, admin
+    home: /home/ubuntu
+    shell: /bin/bash
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDcb7reFZ0ycalWUpfU2uzOBY2AYqy9tLgEbhKIj9XMjie8NSw9Mx++3hAaQyY1ydKNyFFnKMU9/PO2qRv3jMqJbQ0eMOSDBQ6yIXIIy+Y/BHG37HD4Aa5RSGomrBA8XrHnSUI0ReX0L1/hJ/2kZA7vlKe4DDRA5GhOW5G4MQmUQJqvcx6x6Yl6JSX0/N27clTUNlYzszYnqwB7okMORRPQveyVmGg3P7TlGo79O8tXnG/ZIKs7XjwqJvngo2DkcNegoSW6gUAwc9YAEAvyRgIBgydCme3/6m5tFbSQaU64q2Vd/x0HMFAhEaclR4LbRa2NNhkvF70pncWQH90rufOv aws-key
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC0WGP1EZykEtv5YGC9nMiPFW3U3
+
+# Package Configuration
+package_update: true
+packages:
+  - apache2
+  - curl
+  - wget
+  - php
+  - libapache2-mod-php
+
+# Run Commands
+runcmd:
+  - sudo systemctl restart apache2
+
+# Write Files
+write_files:
+  - content: |
+      <?php
+      $ihrname = "Tsering Lhamo Anodunkhartsang";
+      $text = "Scrum Graphically explained";
+      $imageURL = "https://i.postimg.cc/xChz0b3q/M-426.png";
+
+      echo "
+      <html>
+      <head>
+      <title>$ihrname</title>
+      </head>
+      <body>
+      $text
+      <br />
+      <img src='$imageURL' alt='Bildbeschreibung'>
+      </body>
+      </html>
+      ";
+    path: /var/www/html/index.php
+    permissions: "0644"
+    owner: www-data:www-data
