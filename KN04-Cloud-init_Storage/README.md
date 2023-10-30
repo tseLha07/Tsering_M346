@@ -23,9 +23,9 @@
 
 |                         | Typ           | Persistent |
 | :---------------------  | :------------ | :----------|
-| EBS Root                | hot           | ja         |
-| EBS Zusätliches Volumen | cold          | ja         |
-| S3                      | hot           | ja         |
+| EBS Root                | hot           | nein       |
+| EBS Zusätliches Volumen | warm          | ja         |
+| S3                      | warm          | ja         |
 
 
 #### 2. Erklärung/Begründung zu der Kategorisierung:
