@@ -1,7 +1,8 @@
 # KN05: Netzwerk / Sicherheit
 
 ## A. Diagram erstellen
-#### Diagram als Bild
+#### Diagram als Bild:
+![1](images/1.png)
 
 ## B. Subnetz und privaten IP wählen
 #### Screenshot der Subnetzen, die die Namen:
@@ -22,3 +23,4 @@
 #### Screenshot der Details beider Instanzen, so dass die Subnet ID sichtbar ist:
 
 #### Laden Sie die aktualisierten Cloud-init Konfigurationen hoch in Git. Im Web-Konfig, sollte die IP angepasst sein:
+
