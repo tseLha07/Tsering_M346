@@ -9,7 +9,7 @@
 <img src="images/2.png" style="width:900px;"/>
 
 #### 2. Zwei definierte IPs für Web- und DB-Server/Instanz:
-KN05 Subnet: 172.31.80.0/20 (Range: )
+KN05 Subnet: 172.31.80.0/20 (Range: 172.31.80.0 to 172.31.95.255)
 - Web-server: 172.31.83.119<br> 
 - DB-Server: 172.31.83.131<br>
 
